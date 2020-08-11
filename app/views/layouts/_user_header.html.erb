@@ -1,0 +1,15 @@
+<ul class="nav nav-pills pull-right">
+  <% if current_user && current_user.admin %>
+  <li><%= link_to 'Barber Sign up', new_barber_registration_path %></li>
+  <li><%= link_to 'User Sign out', destroy_user_session_path, method: :delete %></li>
+  <% elsif current_user %>
+  <li><%= link_to 'User Sign out', destroy_user_session_path, method: :delete %></li>
+  <% elsif current_barber %>
+  <li><%= link_to 'Barber Sign out', destroy_barber_session_path, method: :delete %></li>
+  <% else %>
+  <li><%= link_to 'User Sign up', new_user_registration_path %></li>
+  <li><%= link_to 'User Sign in', new_user_session_path %></li>
+  <li><%= link_to 'Barber Sign in', new_barber_session_path %></li>
+  <% end %>
+  <li><%= link_to 'Bookings', bookings_path %></li>
+</ul>

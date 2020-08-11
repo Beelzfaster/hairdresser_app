@@ -1,0 +1,51 @@
+A new booking requested by: yes
+A new booking requested by: Yes
+A new booking made for: blade all over
+A new booking made for: Short trim
+A new booking made for: Blade down the middle
+###############Observer Demo:#
++++ BookingObserver: The booking of
+      Long trim No
+      has been updated. cost 
+##############################
+###############Observer Demo:#
++++ BookingObserver: The booking of
+      Long trimmy trim #<User:0x00007fffe7830538>
+      has been updated.
+##############################
+###############Observer Demo:#
+###############Observer Demo:#
+###############Observer Demo:#
+###############Observer Demo:#
+###############Observer Demo:#
++++ BookingObserver: The booking of
+      Short trimmy User
+      has been updated.
+##############################
+###############Observer Demo:#
++++ BookingObserver: The booking for
+      User has been updated to: Fat trim No None
+      .
+##############################
+###############Observer Demo:#
++++ BookingObserver: The booking for
+      User has been updated to:
+      - Cut: Raw Blade
+      - Wash: No
+      - Colour Blue 
+##############################
+###############Observer Demo:#
++++ BookingObserver: The booking for
+      User has been updated to:
+      - Cut: USER1
+      - Wash: MADE
+      - Colour  
+##############################
+###############Observer Demo:#
++++ BookingObserver: The booking for
+      User has been updated to:
+      - Cut: USER1
+      - Wash: MADE
+      - Colour Purple 
+##############################
+A new booking made for: Please Work

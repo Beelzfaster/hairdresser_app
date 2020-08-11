@@ -1,0 +1,20 @@
+<h1>Appointment information for: <%= @booking.cut %></h1>
+<table align="center">
+<tr>
+<th>Appointment information</th>
+</tr>
+<% for appointment in @appointments %>
+<tr>
+<td><%= appointment.information %></td>
+<td><%= link_to 'Show', booking_appointment_path(@booking, appointment)
+%></td>
+<td><%= link_to 'Edit', edit_booking_appointment_path(@booking, appointment)
+%></td>
+<td><%= button_to 'Destroy', booking_appointment_path(@booking, appointment),
+:confirm => 'Are you sure?', :method => :delete, class: "btn-danger delete-btn" %></td>
+</tr>
+<td><%= link_to 'New appointment', new_booking_appointment_path(@booking) %></td>
+<td><%= link_to 'Back to Booking', @booking %></td>
+<% end %>
+</table>
+<br />

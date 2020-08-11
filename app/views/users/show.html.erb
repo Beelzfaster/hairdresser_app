@@ -1,0 +1,6 @@
+<h1><%= @user.email %></h1>
+<p>THIS IS MY PROFILE BABY</p>
+
+<% @user_bookings.each do |booking| %>
+  <%= link_to booking.cut, booking_path(booking) %>
+<% end %>

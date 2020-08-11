@@ -1,0 +1,23 @@
+<h1>BARBERS SHOPPE</h1>
+
+<div class="jumbotron">
+  <% if user_signed_in? %>
+    <h1>Welcome back <%= current_user.username %></h1>
+    <p class="lead">
+      You are signed in! You can make a booking by clicking the red link below! Or if you want you can check out your snazzy new profile, it will show all the bookings you made there!
+    </p>
+    <%= link_to 'Bookings', bookings_path, :class => 'btn btn-large btn-danger' %>
+    <%= link_to "Profile", user_path(current_user), :class => 'btn btn-large btn-success' %>
+  <% else %>
+    <h1>Welcome, new user!</h1>
+    <p class="lead">
+      You must sign in or sign up before you can access my ruby on rails designed website!
+      You can however view current bookings, but you won't be able to make your own without an account!
+    </p>
+    <div class="row-fluid">
+      <div class="span6">
+        <%= link_to 'Bookings', bookings_path, :class => 'btn btn-large btn-danger' %>
+      </div>
+    </div>
+  <% end %>
+</div>

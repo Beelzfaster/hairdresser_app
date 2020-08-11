@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+<h2>Booking Information</h2>
+<p class="main">
+  <strong>Cut:</strong>
+  <%= @booking.cut %>
+</p>
+
+<p class="main">
+  <strong>Wash:</strong>
+  <%= @booking.wash %>
+</p>
+
+<p class="main">
+  <strong>Colour:</strong>
+  <%= @booking.colour %>
+</p>
+
+<p class="main">
+  <strong>User:</strong>
+  <%= @booking.user.username %>
+</p>
+
+<br/><br/>
+<h2>Appointments</h2>
+<% @booking.appointments.each do |appointment| %>
+<p class="main">
+<b>Appointment information:</b>
+<%= appointment.information %>
+</p>
+<% end %>
+<%= link_to 'Edit Booking', edit_booking_path(@booking) %> |
+<%= link_to 'Back', bookings_path %> |
+<%= link_to 'Show Appointments', booking_appointments_path(@booking) %>

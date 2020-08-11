@@ -1,0 +1,7 @@
+<h1>Appointment in <%= @booking.cut %></h1>
+<br/><br/>
+  <b>Appointment information:</b>
+  <%= @appointment.information %>
+
+<%= link_to 'Edit', edit_booking_appointment_path(@booking, @appointment) %> |
+<%= link_to 'Back', booking_appointments_path(@booking) %>
