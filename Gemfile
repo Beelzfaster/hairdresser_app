@@ -13,13 +13,8 @@ gem 'rails-observers'
 
 gem 'activerecord-session_store'
 
-group :development, :test do
-   gem 'sqlite3'
-end
+gem 'pg'
 
-group :production do
-   gem 'pg'
-end
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.3', '>= 6.0.3.2'
