@@ -10,8 +10,10 @@
 %></td>
 <td><%= link_to 'Edit', edit_booking_appointment_path(@booking, appointment)
 %></td>
+<% if current_user && current_user.admin || current_barber %>
 <td><%= button_to 'Destroy', booking_appointment_path(@booking, appointment),
 :confirm => 'Are you sure?', :method => :delete, class: "btn-danger delete-btn" %></td>
+        <% end %>
 </tr>
 <td><%= link_to 'New appointment', new_booking_appointment_path(@booking) %></td>
 <td><%= link_to 'Back to Booking', @booking %></td>

@@ -30,9 +30,9 @@
         <td><%= booking.colour %></td>
         <td><%= booking.user.username %></td>
         <td><%= link_to 'Show', booking %></td>
-        <% if current_user && current_user.admin || current_barber %>
         <td><%= link_to 'Edit', edit_booking_path(booking) %></td>
-        <td><%= button_to 'Destroy', booking, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn-danger delete-btn" %></td>
+        <% if current_user && current_user.admin || current_barber %>
+        <td><%= button_to 'Delete', booking, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn-danger delete-btn" %></td>
         <% end %>
       </tr>
     <% end %>
