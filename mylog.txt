@@ -6,7 +6,7 @@ A new booking made for: Blade down the middle
 ###############Observer Demo:#
 +++ BookingObserver: The booking of
       Long trim No
-      has been updated. cost 
+      has been updated. cost
 ##############################
 ###############Observer Demo:#
 +++ BookingObserver: The booking of
@@ -32,20 +32,20 @@ A new booking made for: Blade down the middle
       User has been updated to:
       - Cut: Raw Blade
       - Wash: No
-      - Colour Blue 
+      - Colour Blue
 ##############################
 ###############Observer Demo:#
 +++ BookingObserver: The booking for
       User has been updated to:
       - Cut: USER1
       - Wash: MADE
-      - Colour  
+      - Colour
 ##############################
 ###############Observer Demo:#
 +++ BookingObserver: The booking for
       User has been updated to:
       - Cut: USER1
       - Wash: MADE
-      - Colour Purple 
+      - Colour Purple
 ##############################
-A new booking made for: Please Work
+A new booking made for: 2 back and sides
